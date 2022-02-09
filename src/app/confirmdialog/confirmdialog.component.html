@@ -1,0 +1,17 @@
+<div mat-dialog-title>
+  <h1>
+    <span>Confirm</span>
+  </h1>
+</div>
+
+  <p> {{ defaults }} </p>
+
+
+<div fxLayout="row" fxLayoutAlign="end end" mat-dialog-actions>
+  <button  mat-stroked-button
+            mat-dialog-close
+            (click)="dialogRef.close()">
+    Cancel </button>
+  <button class="btn btn-primary"style=" float: right; color: blanchedalmond;" mat-dialog-close mat-raised-button color="accent" (click)="Save($event)">OK
+  </button>
+</div>

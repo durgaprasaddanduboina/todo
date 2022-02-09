@@ -1,0 +1,22 @@
+<h2 class=text-center>Users List</h2>
+<button class="btn btn-success text-end" (click)="create()">Create New User +</button>
+<div class="row d-flex justify-content-center">
+ 
+  
+  <div class="card" style="width:400px" *ngFor="let user of usersArr">
+    
+    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png"  height=250 width=100 alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Name: {{user.name}}</h4>
+      <p class="card-text">Email: {{user.email}}</p>
+      <p class="card-text">Contact: {{user.phone}}</p>
+      <p class="card-text">Website: {{user.website}}</p>
+      <button class="btn btn-primary" style="margin:5px;" (click)="editUser(user)">Edit</button>
+      <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+    </div>
+  </div>
+
+
+  
+ 
+</div>
