@@ -52,7 +52,7 @@ private readonly destroyed$ = new Subject<boolean>();
     this.dialog.open(ConfirmdialogComponent, {
       height: '25%',
       panelClass: 'global-mat-custom-dailog',
-      data: 'Are you sure, you want to User data?'
+      data: 'Are you sure, you want to Delete User data?'
     })
       .afterClosed()
       .subscribe((isOKayflag) => {
